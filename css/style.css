@@ -1,0 +1,517 @@
+
+/*################################################################################
+common style here
+################################################################################*/
+
+*{
+    margin: 0;padding: 0;
+}
+body{
+    font-family: Georgia, arial, sans-serif;
+    line-height: 1.5em;
+    font-size: 16px;
+    color: #666;
+}
+.container{
+    max-width: 1000px;
+    width: 96%;
+    margin:0 auto;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.clear{
+    clear: both;
+}
+
+/*######################################################################
+top header area style
+######################################################################*/
+#header{
+    width: 100%;
+}
+.inner_top_head{
+    width: 100%;
+    padding:0 1%;
+    height: 35px;
+    background: #fff;
+    overflow: hidden;
+}
+.left_area{
+    float: left;
+    width: 68%;
+    padding:5px;
+
+}
+.left_area a{
+    display: inline-block;
+    padding-left:20px ;
+    text-decoration: none;
+    color: #696969;
+}
+.left_area:last-child{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.right_area{
+    float: right;
+    width: 30%;
+}
+.right_area form{    
+    margin-right: 20px;
+    background: #e1e1e1;
+    float: right;
+    max-width: 210px;
+    margin-top: 5px;
+    width: 96%;
+    height: 25px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.right_area input{
+    width: 75%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px 0;
+    background: none;
+}
+.right_area input[type="submit"]{
+    width: 23%;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 25px;
+}
+.right_area input[type="submit"]:hover{
+    background: #f00;
+}
+.right_area img{
+    width: 17px;
+    height: auto;
+    position: absolute;
+    z-index: 9999;
+    right: 5px;
+    top: 4px;
+    cursor: pointer;
+}
+
+/*##########################################################################################
+MAIN HEAD STYKE HERE
+##########################################################################################*/
+#main_head{
+    width: 100%;
+
+}
+.inner_main_head{
+    background: #222222;
+    border-bottom:3px solid #7c9c37;
+}
+.logo{
+    float: left;
+    max-width: 190px;
+    width: 100%;
+}
+.logo img{
+    width: 100%;
+    padding: 15px;
+}
+.inner_menu{
+    float: right;
+    max-width: 660px;
+}
+
+.inner_menu ul .li::after{
+    content: '';
+    width: 1px;
+    height: 12px;
+    top: 42px;
+    right: -10px;
+    background: #666666;
+    position: absolute;
+}
+.inner_menu ul .li:last-child::after{
+    display: none;
+}
+#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 999;
+}
+.li{
+    line-height: 75px;
+}
+#menu ul li{
+    display: inline-block;
+    margin-right: 25px;
+    padding: 10px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: #c5c2c2;
+    display: block;
+    transition: all 0.5s ease;
+}
+#menu ul li:hover{
+    background: #177744;
+    border-radius: 10px 0;
+}
+#menu ul li:hover a{
+    color: #fff;
+}
+
+#menu ul ul{
+    margin: 0;
+    padding: 0;
+    background: #f07a7a;
+    position: absolute;
+    top: 60px;
+    left: -8888px;
+    width: 200px;
+    border-radius: 10px 0;
+}
+#menu ul li:hover ul{
+    left: 0;
+}
+#menu ul li:hover ul ul{
+    left:-8888px;
+}
+#menu ul ul li{
+    line-height: 1.5rem;
+    display: block;
+    position: relative;
+    margin: 0;
+}
+#menu ul li:hover ul li a{
+    color: #c5c2c2;
+}
+#menu ul li ul li:hover a{
+    color: #fff;
+}
+
+#menu ul ul ul{
+    background: #f07a7a;
+    position: absolute;
+    top: 0px;
+    left: -9999px;
+    width: 200px;
+    border-radius: 10px 0;
+}
+#menu ul ul li:hover ul li a{
+    color: #c5c2c2;
+}
+#menu ul ul li:hover ul{
+    left: 200px;
+}
+#menu ul li ul ul li:hover a{
+    color: #fff;
+}
+/*##########################################################################
+slider area style
+##########################################################################*/
+
+.slider_area{
+    padding: 0;
+    margin: 0;
+}
+.item{
+    padding: 0;
+    margin: 0;
+}
+
+/*##########################################################################
+hero area style
+##########################################################################*/
+
+.inner_hero {
+   
+}
+.inner_hero p{
+    font-style: italic;
+    font-size: 28px;
+    font-weight: normal;
+    padding: 45px;
+}
+.inner_hr{
+    text-align: center;
+}
+.inner_hr img{
+    max-width: 800px;
+    margin:0 auto;
+}
+
+/*##########################################################################
+gallery area style
+##########################################################################*/
+#gallery_area{
+    margin: 40px 0;
+}
+.inner_gallery{
+    overflow: hidden;
+}
+.gallery_child{
+    width: 23%;
+    margin: 1%;
+    float: left;
+    background: #f0f0f0;
+}
+.gallery_text{
+    padding: 10px;
+  
+}
+.gallery_text h4{
+   color: #7c9c37;
+   font-size: 18px;
+   font-weight: normal;
+}
+.gallery_text p{
+    color: #666666; ;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+/*##########################################################################
+dolor area style
+##########################################################################*/
+#dolor_area{
+    margin: 40px 0;
+}
+.inner_dolor{
+    overflow: hidden;
+}
+.dolor_datile{
+    float: left;
+    width: 48%;
+    margin: 1%;
+}
+.dolor_top{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 5px;
+}
+.dolor_top h3{
+    color: #666666;
+    font-size: 18px;
+    font-weight: normal;
+    float: left;
+}
+.dolor_top a{
+    text-decoration: none;
+    color: #7c9c37;
+    font-size: 15px;
+    font-weight: normal;
+    float: right;
+}
+.dolor_text_area{
+    margin-top: 20px;
+
+}
+.dolor{
+    overflow: hidden;
+    float: right;
+    width: 48%;
+    margin:0 1%;
+}
+.dolor .dolor_img{
+    float: left;
+    width: 28%;
+    width: 50px;
+}
+.dolor .dolor_text{
+    float: right;
+    width: 67%;
+    padding-left: 3%;
+}
+.dolor .dolor_text h4{
+    color: #7c9c37;
+    font-size: 14px;
+}
+.dolor .dolor_text p{
+    color: #666666;
+    font-size: 13px;
+}
+.dolor_user{
+    float: right;
+    width: 48%;
+    margin: 1%;
+}
+.users_profile{
+   margin-top: 20px;
+   overflow: hidden;
+}
+.users{
+    float: left;
+    width: 46%;
+}
+
+.left_users{
+    margin-right: 2%;
+}
+.right_users{
+    margin-left: 2%;
+}
+.users a{
+    text-decoration: none;
+    color: #7c9c37;
+    font-size: 13px;
+}
+.users_title p{
+    font-size: 13px;
+}
+
+
+/*##########################################################################
+dolor area style
+##########################################################################*/
+
+#footer_area{
+
+}
+.inner_footer{
+    overflow: hidden;
+    padding: 30px 15px;
+    background: #222222;
+    border-bottom: 1px solid #000;
+}
+.child_footer{
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+}
+.child_footer h3{
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.about img{
+    width: 90%;
+    text-align: center;
+    border: 1px solid #3f3e3e;
+    padding: 3px;
+}
+.child_footer p{
+   color: #666666;
+   font-size: 12px;
+}
+.child_footer a{
+   color: #7c9c37;
+   font-size: 12px;
+   text-decoration: none;
+}
+.like ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.like ul li{
+    display: block;
+    border-bottom: 1px solid #3a3a3a;
+}
+.like ul li a{
+    display: block;
+    font-size: 12px;
+    transition: all 0.4s ease;
+}
+ a:hover{
+    color: #818181;
+}
+
+.from .first{
+    display: block;
+    margin-bottom: 20px;
+}
+.from .the_block{
+    display: block;
+}
+.from .the_block h5{
+    color:#666666;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.from .the_block h6{
+    color:#666666;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+.from .the_block p{
+    color:#666666;
+    font-size: 12px;
+}
+
+.contact .links {
+    display: block;
+    width: 100%;
+}
+.contact .links a{
+    display: block;
+    color: #666666;
+    transition: all 0.4s ease;
+}
+.contact .links a span{
+    display: inline-block;
+    color: #7c9c37;
+}
+.contact .links a:hover{
+    color: #7c9c37;
+}
+.contact .links a span:hover{
+    color: #666666;
+}
+.form h4{
+    font-size: 12px;
+    color: #666666;
+    padding: 15px 0;
+}
+.form input{
+    width: 90%;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #353535;
+}
+.form input[type="submit"]{
+    width: 80px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    background: #7c9c37;
+    padding: 10px 0px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.form input[type="submit"]:hover{
+    background: #617a2b;
+}
+.inner_copy{
+    background: #222222;
+    border-top: 1px solid #3a3a3a;
+    overflow: hidden;
+
+}
+.copy{
+    float: left;
+    width: 60%;
+}
+.inner_copy p{
+    padding: 17.5px 20px;
+}
+.cradit{
+    float: right;
+    width: 40%;
+    text-align: right;
+}

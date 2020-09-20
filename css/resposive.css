@@ -1,0 +1,28 @@
+
+/*##########################################################
+    tablet style
+##########################################################*/
+
+@media only screen and (min-width:200px) and (max-width:991px){
+    .gallery_child {width: 48%; margin-bottom: 20px;}
+    .dolor_user {float: left; width: 100%; margin-top: 25px;}
+    .dolor_datile {float: none; width: 100%;}
+    .child_footer { width: 100%;margin-bottom: 20px;}
+    .about img {width: 97%;}
+    #menu ul li {display:block; line-height: 1.5rem;}
+    .innre_menu {float: none;}
+    #menu ul .li::after{display: none;}
+    #menu ul ul{ z-index: 1;}
+    #menu ul ul{top: 0px;}
+    .logo {float: none;max-width: 100%; text-align: center; }
+    .logo img {width: 190px; }
+    .users {float: left; width: 48%;}
+    .inner_hero p {font-size: 22px;padding: 19px;}
+}
+
+@media only screen and (min-width:200px) and (max-width:770px){
+    .inner_hero p {font-size: 17px;padding: 15px;}
+    .inner_top_head {height: auto;}
+    .right_area,  .left_area  {float: none;width: 100%;text-align: center;display: block;}
+    .right_area form { float: none; max-width: 250px; left: 34%; margin-bottom: 12px;}
+}
